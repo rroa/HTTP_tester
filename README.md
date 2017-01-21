@@ -9,10 +9,14 @@ Test suite to validate homework requirements.
     
         git checkout development
 
-3. Run all the tests for all the PORTS defined
+3. Restore the dependencies
+
+        npm install or yarn install
+        
+4. Run all the tests for all the PORTS defined
 
         ./tester.sh
 
-4. Run the tests for a single target
+5. Run the tests for a single target
 
         HOST={hostname} PORT={port} make test
