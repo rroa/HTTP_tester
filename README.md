@@ -3,16 +3,20 @@ Test suite to validate homework requirements.
 
 1. Clone the repository:
 
-    https://github.com/rroa/WA_tests
+        git clone https://github.com/rroa/WA_tests
 
 2. Checkout the development branch
     
-    git checkout development
+        git checkout development
 
-3. Run all the tests for all the PORTS defined
+3. Restore the dependencies
 
-    ./tester.sh
+        npm install or yarn install
+        
+4. Run all the tests for all the PORTS defined
 
-4. Run the tests for a single target
+        ./tester.sh
 
-    HOST={hostname} PORT={port} make test
+5. Run the tests for a single target
+
+        HOST={hostname} PORT={port} make test
