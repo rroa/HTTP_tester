@@ -105,9 +105,9 @@ describe('Server response', function () {
   });
 
   // Check path is correct
-  it('path should be perreo', function (done) {
+  it('path should be test', function (done) {
     var options = {
-      url: url + '/perreo',
+      url: url + '/test',
       headers: {
         'Content-Type': 'text/json'
       }
@@ -117,7 +117,7 @@ describe('Server response', function () {
       let response = JSON.parse(res.body);
       expect(response).to.not.be.undefined;
       expect(response.path).to.not.be.undefined;
-      expect(response.path).to.equal('/perreo');
+      expect(response.path).to.equal('/test');
       done();
     });
   });
