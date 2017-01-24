@@ -12,8 +12,8 @@ let expect = chai.expect;
 chai.use(chaiHttp);
 
 // locals
-let host = 'localhost'; //process.env.HOST;
-let port = 3000; //process.env.PORT;
+let host = process.env.HOST;
+let port = process.env.PORT;
 let url = 'http://' + host + ':' + port;
 
 describe('Assignment 2', function () {
