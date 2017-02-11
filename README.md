@@ -20,3 +20,7 @@ Test suite to validate homework requirements.
 5. Run the tests for a single target
 
         HOST={hostname} PORT={port} make test
+        
+6. Run the a single test for a single target
+
+        PORT={port} HOST={hostname} node_modules/mocha/bin/mocha {path/to/test/file} --ui tdd
