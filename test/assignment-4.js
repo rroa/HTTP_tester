@@ -37,7 +37,7 @@ describe('Assignment 4', function () {
             chai.request(url)
                 .post('/image')
                 .set('content-type', 'application/x-www-form-urlencoded')
-                .attach('image', fs.readFileSync(path.join(__dirname, 'matrix.jpg')), 'matrix.jpg')
+                .send({test: 'test'})
                 .end((err, res) => {
                     res.should.have.status(400);
                     done();
